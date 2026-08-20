@@ -259,3 +259,93 @@ nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-i
   .footer-grid{grid-template-columns:1fr}
   .cta-form{flex-direction:column}
 }
+
+/* ===== 以下を globals.css の末尾に追記してください ===== */
+
+/* 日本語版（/ja）専用スタイル */
+.lang-ja,
+.lang-ja nav,
+.lang-ja .btn-primary,
+.lang-ja .btn-ghost,
+.lang-ja .btn-solid,
+.lang-ja .btn-outline-sm,
+.lang-ja .cta-btn,
+.lang-ja .cta-input,
+.lang-ja .nav-cta {
+  font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+}
+
+/* 日本語は大文字変換すると崩れるため解除 */
+.lang-ja .nav-links,
+.lang-ja .btn-primary,
+.lang-ja .btn-ghost,
+.lang-ja .btn-solid,
+.lang-ja .btn-outline-sm,
+.lang-ja .cta-btn,
+.lang-ja .nav-cta,
+.lang-ja .hero-eyebrow,
+.lang-ja .section-eyebrow,
+.lang-ja .stat-label,
+.lang-ja .team-role,
+.lang-ja .prop-tag,
+.lang-ja .prop-sub-eyebrow,
+.lang-ja .banks-eyebrow,
+.lang-ja .bank-col h5,
+.lang-ja .reno-card-tag,
+.lang-ja .learn-card-tag,
+.lang-ja .cta-eyebrow,
+.lang-ja .footer-col h5,
+.lang-ja .hero-img-label,
+.lang-ja .hero-divider-badge,
+.lang-ja .scroll-text,
+.lang-ja .learn-read-more {
+  text-transform: none;
+  letter-spacing: .08em;
+}
+
+/* 日本語は行長が詰まるため行間を広げる */
+.lang-ja .hero-desc,
+.lang-ja .prop-lead,
+.lang-ja .banks-lead,
+.lang-ja .hiw-desc,
+.lang-ja .team-desc,
+.lang-ja .step-content p,
+.lang-ja .diff-card p,
+.lang-ja .learn-card p,
+.lang-ja .cta-sub,
+.lang-ja .footer-tagline {
+  line-height: 1.9;
+}
+
+.lang-ja .hero-title,
+.lang-ja .section-title,
+.lang-ja .cta-title {
+  line-height: 1.35;
+}
+
+/* 社内確認用バナー */
+.ja-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--ink);
+  color: rgba(245, 240, 232, .8);
+  font-family: 'DM Sans', 'Hiragino Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: .05em;
+  text-align: center;
+  padding: 10px 24px;
+  border-top: 1px solid var(--gold);
+}
+.ja-banner a {
+  color: var(--gold-light);
+  text-decoration: underline;
+  margin: 0 4px;
+}
+
+/* バナー分の余白を確保 */
+.lang-ja .site-footer {
+  padding-bottom: 72px;
+}
