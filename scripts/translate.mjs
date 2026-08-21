@@ -29,7 +29,7 @@ const API_URL = "https://api.anthropic.com/v1/messages";
 const BATCH_SIZE = 25;
 
 /* 翻訳しないキー（URL・記号・固有名詞など） */
-const SKIP_KEYS = new Set(["url", "href", "icon", "num", "kanji", "em"]);
+const SKIP_KEYS = new Set(["url", "href", "icon", "num", "kanji", "em", "name", "company"]);
 
 /* 訳語を固定したい用語 */
 const GLOSSARY = `
