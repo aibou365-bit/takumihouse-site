@@ -34,10 +34,10 @@ export const properties = {
   eyebrow: "Properties",
   title1: "Find your",
   title2: "kominka.",
-  lead: "Browse our curated listings — or explore regional akiya banks below. Found a property elsewhere? Send us the link. We handle everything from there.",
+  lead: "Browse our curated listings — or explore the regional akiya banks below. Found a property elsewhere? Send us the link. We handle everything from there.",
   curatedLabel: "Curated Listings — Takumi House Partner Properties",
   card: {
-    tag: "Coming Soon · Hyogo Prefecture",
+    tag: "Coming Soon · Yamanashi Prefecture",
     name: "Traditional Farmhouse · c.1890",
     desc: "280㎡ · Mountain setting · Structural survey complete. Full renovation scope available on request.",
     priceLabel: "Property price",
@@ -45,45 +45,48 @@ export const properties = {
     enquire: "Enquire",
   },
   empty: "More listings coming soon",
-  banksLabel: "Regional Akiya Banks",
+  banksLabel: "Regional Akiya Banks — Our Coverage Area",
   banksLead:
-    "Browse publicly available listings from official municipal akiya banks across Japan. Found something that interests you? Send us the link — we handle all Japanese communication, negotiation, site inspection, and purchase support.",
+    "We currently operate across Greater Tokyo, Yamanashi, and Shizuoka — the regions our licensed builder covers directly. Every property we take on receives an on-site inspection by our own team, never a subcontractor. Browse the official municipal akiya banks below, and send us the link to anything that catches your eye. We handle all Japanese communication, negotiation, site inspection, and purchase support.",
   bannerTitle: "Found a property on an akiya bank or another site?",
   bannerDesc: "Send us the link. We handle negotiation, inspection, purchase, and renovation — end to end.",
   bannerCta: "Send Us a Link",
 };
 
+/**
+ * 空き家バンクへのリンク。
+ * 各自治体の個別サイトはURL変更が多くリンク切れしやすいため、
+ * 国土交通省「全国版 空き家・空き地バンク」のモデル事業である
+ * LIFULL HOME'S 空き家バンクの都道府県ページに統一している。
+ */
 export const bankLinks = [
   {
-    region: "Kansai Region",
+    region: "Tokyo · Kanagawa",
     items: [
-      { label: "Kyoto City", url: "https://www.city.kyoto.lg.jp/tokei/page/0000187411.html" },
-      { label: "Nara Prefecture", url: "https://www.pref.nara.jp/55311.htm" },
-      { label: "Hyogo Prefecture", url: "https://www.pref.hyogo.lg.jp/kk22/akiya.html" },
+      { label: "Tokyo", url: "https://www.homes.co.jp/akiyabank/kanto/tokyo/" },
+      { label: "Kanagawa", url: "https://www.homes.co.jp/akiyabank/kanto/kanagawa/" },
     ],
   },
   {
-    region: "Chubu Region",
+    region: "Saitama · Chiba",
     items: [
-      { label: "Nagano Prefecture", url: "https://www.pref.nagano.lg.jp/jukankyo/akiya/index.html" },
-      { label: "Gifu Prefecture (Hida)", url: "https://www.pref.gifu.lg.jp/page/9227.html" },
-      { label: "Yamanashi Prefecture", url: "https://www.pref.yamanashi.jp/kenchiku-hs/akiya.html" },
+      { label: "Saitama", url: "https://www.homes.co.jp/akiyabank/kanto/saitama/" },
+      { label: "Chiba", url: "https://www.homes.co.jp/akiyabank/kanto/chiba/" },
     ],
   },
   {
-    region: "Chugoku · Shikoku",
+    region: "Northern Kanto",
     items: [
-      { label: "Shimane Prefecture", url: "https://www.pref.shimane.lg.jp/life/house/akiya/" },
-      { label: "Kochi Prefecture", url: "https://www.pref.kochi.lg.jp/soshiki/171301/akiyabank.html" },
-      { label: "Tokushima Prefecture", url: "https://www.pref.tokushima.lg.jp/ippannokata/kurashi/sumai/5012337" },
+      { label: "Ibaraki", url: "https://www.homes.co.jp/akiyabank/kanto/ibaraki/" },
+      { label: "Tochigi", url: "https://www.homes.co.jp/akiyabank/kanto/tochigi/" },
+      { label: "Gunma", url: "https://www.homes.co.jp/akiyabank/kanto/gunma/" },
     ],
   },
   {
-    region: "Kyushu · Okinawa",
+    region: "Yamanashi · Shizuoka",
     items: [
-      { label: "Oita Prefecture", url: "https://www.pref.oita.jp/soshiki/13400/akiyabank.html" },
-      { label: "Kumamoto Prefecture", url: "https://www.pref.kumamoto.jp/soshiki/21/4836.html" },
-      { label: "Kagoshima Prefecture", url: "https://www.pref.kagoshima.jp/ab08/akiyabank.html" },
+      { label: "Yamanashi", url: "https://www.homes.co.jp/akiyabank/hokuriku/yamanashi/" },
+      { label: "Shizuoka", url: "https://www.homes.co.jp/akiyabank/tokai/shizuoka/" },
     ],
   },
 ];
@@ -132,7 +135,7 @@ export const howItWorks = {
     },
     {
       title: "Property Search",
-      body: "Browse our curated listings or explore regional akiya banks. Found something elsewhere? Send us the link — we handle all Japanese communication, negotiation, and legal checks. You just choose.",
+      body: "Browse our curated listings or explore the regional akiya banks. Found something elsewhere? Send us the link — we handle all Japanese communication, negotiation, and legal checks. You just choose.",
     },
     {
       title: "Property Report",
@@ -162,7 +165,7 @@ export const renovations = {
   title2: "NUMBER PLUS",
   cards: [
     {
-      tag: "Hyogo Prefecture · Farmhouse",
+      tag: "Yamanashi · Farmhouse",
       title: "The Tanaka Kominka",
       price: "Property: ¥12M / Renovation: ¥44M",
       meta: "Built 1887 · 280㎡ · 5 months",
@@ -174,8 +177,8 @@ export const renovations = {
       meta: "Built 1923 · 190㎡ · 4 months",
     },
     {
-      tag: "Nara · Estate Conversion",
-      title: "Yoshino Residence",
+      tag: "Shizuoka · Estate Conversion",
+      title: "Izu Residence",
       price: "Property: ¥21M / Renovation: ¥44M",
       meta: "Built 1901 · 420㎡ · 7 months",
     },
