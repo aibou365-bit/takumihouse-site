@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import { ICONS } from "./icons";
 
 /**
  * 英語版・日本語版で共通のページ構造。
@@ -249,15 +250,18 @@ export default function SiteBody({ c }) {
             <em>{c.whyUs.title2}</em>
           </h2>
           <div className="diff-grid">
-            {c.whyUs.cards.map((card, i) => (
-              <div className="diff-card" key={i}>
-                <div className="diff-icon" aria-hidden="true">
-                  {card.icon}
+            {c.whyUs.cards.map((card, i) => {
+              const Icon = ICONS[card.icon];
+              return (
+                <div className="diff-card" key={i}>
+                  <div className="diff-icon" aria-hidden="true">
+                    {Icon ? <Icon /> : null}
+                  </div>
+                  <h4>{card.title}</h4>
+                  <p>{card.body}</p>
                 </div>
-                <h4>{card.title}</h4>
-                <p>{card.body}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

@@ -191,22 +191,22 @@ export const whyUs = {
   title2: "can't offer.",
   cards: [
     {
-      icon: "🏗",
+      icon: "license",
       title: "Licensed Builder On Your Team",
       body: "Every competitor outsources renovation to unknown contractors. We have NUMBER PLUS — a licensed Japanese builder — at the core of every project. Same team, every time.",
     },
     {
-      icon: "🗾",
+      icon: "no-extra-fee",
       title: "No Separate Acquisition Fee",
       body: "Other services charge a facilitation fee on top of the brokerage commission, because their brokerage is a third party. Ours is held within the partnership. You pay the statutory commission, and nothing more.",
     },
     {
-      icon: "🥽",
+      icon: "vr",
       title: "VR Walkthrough Before Construction",
       body: "Every project includes a VR walkthrough of the completed space, delivered alongside design drawings — before a single nail is hammered. See exactly what you're getting.",
     },
     {
-      icon: "🌏",
+      icon: "three-experts",
       title: "One Point of Contact. Three Experts.",
       body: "You talk to Chris in English. Behind the scenes, a digital marketer, a licensed builder, and a North America market expert are coordinating every detail. Nothing falls through the cracks.",
     },
