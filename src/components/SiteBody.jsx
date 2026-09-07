@@ -226,17 +226,26 @@ export default function SiteBody({ c }) {
           </h2>
         </div>
         <div className="reno-grid">
-          {c.renovations.cards.map((card, i) => (
-            <div className="reno-card" key={i}>
-              <div className={`reno-card-bg reno-card-bg-${i + 1}`} />
-              <div className="reno-card-content">
-                <div className="reno-card-tag">{card.tag}</div>
-                <div className="reno-card-title">{card.title}</div>
-                <div className="reno-price-row">{card.price}</div>
-                <div className="reno-card-meta">{card.meta}</div>
+          {c.renovations.cards.length === 0 ? (
+            <div className="prop-card-empty">
+              <div>
+                <div className="mark">匠</div>
+                <div className="note">{c.renovations.empty}</div>
               </div>
             </div>
-          ))}
+          ) : (
+            c.renovations.cards.map((card, i) => (
+              <div className="reno-card" key={i}>
+                <div className={`reno-card-bg reno-card-bg-${i + 1}`} />
+                <div className="reno-card-content">
+                  <div className="reno-card-tag">{card.tag}</div>
+                  <div className="reno-card-title">{card.title}</div>
+                  <div className="reno-price-row">{card.price}</div>
+                  <div className="reno-card-meta">{card.meta}</div>
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </section>
 

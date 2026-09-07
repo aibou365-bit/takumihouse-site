@@ -139,7 +139,7 @@ export const howItWorks = {
     },
     {
       title: "Property Report",
-      body: "NUMBER PLUS conducts a full on-site inspection. We deliver a detailed English report covering legal checks, structural assessment, cost estimates, renovation direction, and ROI projection — before you commit to purchase.",
+      body: "Our licensed partner conducts a full on-site inspection. You receive a detailed English report covering legal checks, the actual condition of the building, what has to be repaired for it to be livable, what those repairs cost, and renovation scenarios at different levels of scope — before you commit to purchase.",
       note: "¥150,000 – ¥300,000 (paid upfront via Stripe)",
     },
     {
@@ -150,7 +150,7 @@ export const howItWorks = {
     {
       title: "Design & Renovation",
       body: "The design agreement is signed alongside the purchase agreement. Master craftspeople restore your kominka. You receive design drawings, specifications, and a VR walkthrough of the completed space — before construction begins.",
-      note: "Design fee ¥500,000 · Turnkey renovation from ¥44,000,000",
+      note: "Design fee ¥500,000 · Renovation priced after on-site assessment",
     },
     {
       title: "Handover",
@@ -162,27 +162,9 @@ export const howItWorks = {
 export const renovations = {
   eyebrow: "Portfolio",
   title1: "Restorations by",
-  title2: "NUMBER PLUS",
-  cards: [
-    {
-      tag: "Yamanashi · Farmhouse",
-      title: "The Tanaka Kominka",
-      price: "Property: ¥12M / Renovation: ¥44M",
-      meta: "Built 1887 · 280㎡ · 5 months",
-    },
-    {
-      tag: "Yamanashi · Mountain Retreat",
-      title: "Fuji Farmhouse",
-      price: "Property: ¥8M / Renovation: ¥44M",
-      meta: "Built 1923 · 190㎡ · 4 months",
-    },
-    {
-      tag: "Shizuoka · Estate Conversion",
-      title: "Izu Residence",
-      price: "Property: ¥21M / Renovation: ¥44M",
-      meta: "Built 1901 · 420㎡ · 7 months",
-    },
-  ],
+  title2: "our partners",
+  empty: "Project portfolio coming soon",
+  cards: [],
 };
 
 export const whyUs = {
@@ -193,7 +175,7 @@ export const whyUs = {
     {
       icon: "license",
       title: "Licensed Builder On Your Team",
-      body: "Every competitor outsources renovation to unknown contractors. We have NUMBER PLUS — a licensed Japanese builder — at the core of every project. Same team, every time.",
+      body: "Every competitor outsources renovation to unknown contractors. Our builders are licensed partners inside the partnership — not subcontractors we found for your project.",
     },
     {
       icon: "no-extra-fee",
@@ -230,12 +212,6 @@ export const learn = {
       body: "Foreign ownership rights, visa requirements, and e-contract rules explained clearly.",
       cta: "Read",
     },
-    {
-      tag: "Tool",
-      title: "ROI Calculator",
-      body: "Enter property price, renovation budget, and your goals. Get an estimated return instantly.",
-      cta: "Open Calculator",
-    },
   ],
 };
 
@@ -268,7 +244,6 @@ export const footer = {
       links: [
         { label: "Buyer's Guide", href: "#learn" },
         { label: "Legal Guide", href: "#learn" },
-        { label: "ROI Calculator", href: "#learn" },
         { label: "Market Reports", href: "#learn" },
       ],
     },
@@ -276,7 +251,6 @@ export const footer = {
       heading: "Company",
       links: [
         { label: "The Team", href: "#team" },
-        { label: "NUMBER PLUS", href: "#team" },
         { label: "Contact", href: "#contact" },
       ],
     },
